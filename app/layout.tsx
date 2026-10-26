@@ -13,8 +13,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="id">
       <body>
         <header className="topbar">
-          <Link href="/" className="brand" style={{ textDecoration: "none" }}>
-            s<span>.</span>peka<span>.</span>ai<span>.</span>id
+          <Link href="/" className="brand">
+            <span className="logo-mark" />
+            s.peka.ai.id
           </Link>
           <Nav />
         </header>

@@ -16,12 +16,12 @@ export default async function MicrositePublic({ params }: { params: Promise<{ sl
 
   if (!site || site.is_active !== 1) {
     return (
-      <main style={{ background: "#111111", color: "#f2f2ec", minHeight: "100vh" }}>
+      <main style={{ background: "#f3f3f0", color: "#111111", minHeight: "100vh" }}>
         <div style={{ maxWidth: 560, margin: "0 auto", padding: "64px 20px" }}>
-          <div style={{ background: "#1a1a1a", border: "1px solid rgba(255,255,255,.09)", borderRadius: 10, padding: 24 }}>
+          <div style={{ background: "#fbfbf8", border: "1px solid #d6d6d2", borderLeft: "4px solid #ffd60a", borderRadius: 2, padding: 24 }}>
             <h1 style={{ marginTop: 0 }}>Microsite tidak ditemukan</h1>
             <p>Halaman ini tidak ada atau sedang dinonaktifkan.</p>
-            <p><Link href="/" style={{ color: "#ffd60a" }}>Buat microsite sendiri di s.peka.ai.id</Link></p>
+            <p><Link href="/" style={{ color: "#111111" }}>Buat microsite sendiri di s.peka.ai.id</Link></p>
           </div>
         </div>
       </main>
