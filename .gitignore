@@ -2,3 +2,4 @@ data/
 .next/
 node_modules/
 .env
+preview/

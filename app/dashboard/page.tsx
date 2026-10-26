@@ -81,8 +81,10 @@ export default function DashboardPage() {
   return (
     <main className="wrap-wide">
       <section className="hero">
+        <span className="spec-label">Link & Statistik • Microsite • Pengaturan</span>
         <h1>Dashboard</h1>
         <p>Semua link kamu, statistik kliknya, dan microsite, dalam satu tempat.</p>
+        <div className="ruler" />
       </section>
 
       <nav className="tabs">

@@ -66,8 +66,10 @@ export default function SettingsPage() {
   return (
     <main className="wrap-wide">
       <section className="hero">
+        <span className="spec-label">Pengaturan • Profil • Keamanan</span>
         <h1>Pengaturan</h1>
         <p>Profil dan keamanan akun kamu.</p>
+        <div className="ruler" />
       </section>
 
       <nav className="tabs">

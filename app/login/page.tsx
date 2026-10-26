@@ -38,8 +38,10 @@ export default function LoginPage() {
   return (
     <main className="wrap">
       <section className="hero">
+        <span className="spec-label">Akun • Masuk</span>
         <h1>Masuk</h1>
         <p>Masuk ke dashboard untuk link unlimited, statistik, dan microsite.</p>
+        <div className="ruler" />
       </section>
       <form className="card" onSubmit={submit}>
         <div className="field">

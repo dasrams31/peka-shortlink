@@ -4,8 +4,8 @@ import Nav from "@/components/Nav";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "s.peka.ai.id - Pendekin Link Peka",
-  description: "Pendekin link panjang jadi pendek, custom slug, statistik klik, dan microsite. Gratis, dari Peka AI.",
+  title: "SnaPeka",
+  description: "SnaPeka: pendekin link dan microsite dalam satu tempat. Custom slug, statistik klik, gratis tanpa iklan.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -15,7 +15,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <header className="topbar">
           <Link href="/" className="brand">
             <span className="logo-mark" />
-            s.peka.ai.id
+            SnaPeka
           </Link>
           <Nav />
         </header>

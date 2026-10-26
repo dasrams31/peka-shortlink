@@ -39,8 +39,10 @@ export default function RegisterPage() {
   return (
     <main className="wrap">
       <section className="hero">
+        <span className="spec-label">Akun • Daftar gratis</span>
         <h1>Daftar gratis</h1>
         <p>Satu akun untuk link unlimited, statistik lengkap, dan microsite sendiri.</p>
+        <div className="ruler" />
       </section>
       <form className="card" onSubmit={submit}>
         <div className="field">

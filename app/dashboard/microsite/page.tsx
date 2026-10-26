@@ -130,8 +130,10 @@ export default function MicrositePage() {
   return (
     <main className="wrap-wide">
       <section className="hero">
+        <span className="spec-label">Microsite • Slug • Tema • Link</span>
         <h1>Microsite</h1>
         <p>Satu halaman untuk semua link kamu. Atur slug, judul, bio, tema, dan daftar linknya.</p>
+        <div className="ruler" />
       </section>
 
       <nav className="tabs">

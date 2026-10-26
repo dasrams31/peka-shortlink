@@ -33,13 +33,17 @@ export default async function MicrositePublic({ params }: { params: Promise<{ sl
 
   return (
     <main style={{ background: t.bg, color: t.text, minHeight: "100vh" }}>
+      <style>{`.ms-link:hover{filter:brightness(.95)}`}</style>
       <div style={{ maxWidth: 560, margin: "0 auto", padding: "48px 20px 64px", textAlign: "center" }}>
+        <p style={{ fontFamily: '"Space Mono",ui-monospace,Menlo,Consolas,monospace', fontSize: 12, letterSpacing: "0.08em", textTransform: "uppercase", color: t.muted, margin: "0 0 12px" }}>
+          @{site.slug}
+        </p>
         {site.avatar_url && (
           // eslint-disable-next-line @next/next/no-img-element
           <img
             src={site.avatar_url}
             alt={site.title || site.slug}
-            style={{ width: 96, height: 96, borderRadius: "50%", objectFit: "cover", marginBottom: 16 }}
+            style={{ width: 96, height: 96, borderRadius: "50%", objectFit: "cover", marginBottom: 16, boxShadow: "0 0 0 3px #ffd60a" }}
           />
         )}
         <h1 style={{ margin: "0 0 8px", fontSize: 28, letterSpacing: "-0.02em" }}>{site.title || site.slug}</h1>
@@ -52,16 +56,17 @@ export default async function MicrositePublic({ params }: { params: Promise<{ sl
               href={l.url}
               target="_blank"
               rel="noreferrer"
+              className="ms-link"
               style={{
                 display: "block", background: t.btnBg, color: t.btnText, fontWeight: 700,
-                padding: "14px 20px", borderRadius: 10, textDecoration: "none", minHeight: 44,
+                padding: "14px 20px", borderRadius: 2, textDecoration: "none", minHeight: 44,
               }}
             >
               {l.title}
             </a>
           ))}
         </div>
-        <p style={{ color: t.muted, fontSize: 13, marginTop: 40 }}>
+        <p style={{ color: t.muted, fontSize: 12, marginTop: 40, fontFamily: '"Space Mono",ui-monospace,Menlo,Consolas,monospace', letterSpacing: "0.04em" }}>
           Dibuat dengan <a href="/" style={{ color: t.btnBg === "#ffd60a" ? "#ffd60a" : t.text }}>s.peka.ai.id</a>
         </p>
       </div>

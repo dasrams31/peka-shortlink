@@ -1,3 +1,4 @@
+import Link from "next/link";
 import ShortenForm from "@/components/ShortenForm";
 import { getSessionUser } from "@/lib/auth";
 import { countClicks, countLinks } from "@/lib/db";
@@ -13,13 +14,13 @@ export default async function Home() {
     <main className="wrap">
       <section className="hero hero-center">
         <div className="marks-row">
-          <span className="spec-label">Shortlink • Gratis • Tanpa iklan</span>
+          <span className="spec-label">SnaPeka • Shortlink + Microsite</span>
           <span className="marks"><i /><i /><i /></span>
         </div>
-        <h1>Link panjang jadi <span className="hl">pendek</span>, langsung dari sini.</h1>
+        <h1>SnaPeka: link pendek dan microsite, <span className="hl">jadi satu.</span></h1>
         <p>
-          Tempel link, dapat link pendek s.peka.ai.id. Gratis, tanpa iklan,
-          dan bisa pakai slug sendiri.
+          Pendekin link panjang, lalu kumpulin semua link kamu di satu halaman microsite.
+          Satu akun, dua layanan, gratis tanpa iklan.
         </p>
         <div className="ruler" />
       </section>
@@ -30,6 +31,16 @@ export default async function Home() {
           Sejauh ini {totalLinks} link dibuat dan {totalClicks} klik tercatat di s.peka.ai.id.
         </p>
       </div>
+
+      <section className="section">
+        <h2>Layanan SnaPeka</h2>
+        <p className="sub">Dua layanan yang gabung jadi satu: shortlink dan microsite, dalam satu akun dan satu dashboard.</p>
+        <div className="snap-grid3">
+          <div className="card snap-flag"><span className="n">01 • SHORTLINK</span><strong>Pendekin link</strong><p>Custom slug, statistik klik, dan dashboard lengkap. Formulirnya ada tepat di atas.</p><p style={{ marginTop: 12 }}><Link href="/">Buat shortlink →</Link></p></div>
+          <div className="card"><span className="n">02 • MICROSITE</span><strong>Satu halaman untuk semua link</strong><p>Link-in-bio di s.peka.ai.id/m/nama-kamu, dengan judul, bio, tema, dan daftar link yang bisa diurutkan.</p><p style={{ marginTop: 12 }}><Link href={user ? "/dashboard/microsite" : "/register"}>Buat microsite →</Link></p></div>
+          <div className="card"><span className="n">GABUNG JADI SATU</span><strong>Satu akun, semua terhubung</strong><p>Shortlink yang kamu buat dan microsite kamu tinggal di dashboard yang sama. Tamu bisa 5 link per IP per hari, daftar gratis jadi unlimited.</p><p style={{ marginTop: 12 }}><Link href={user ? "/dashboard" : "/register"}>Ke dashboard →</Link></p></div>
+        </div>
+      </section>
 
       <section className="section">
         <h2>Yang bisa kamu lakukan</h2>

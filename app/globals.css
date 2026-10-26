@@ -203,3 +203,23 @@ table.tbl { width: 100%; border-collapse: collapse; font-size: 14px; }
   .tbl-wrap { overflow-x: auto; }
   .tbl { min-width: 560px; }
 }
+
+/* SnaPeka page (microsite merged into s.peka.ai.id) */
+.hl { background: var(--yellow); padding: 0 6px; }
+.ruler {
+  height: 10px; margin-top: 20px;
+  background-image: repeating-linear-gradient(90deg, var(--border-strong) 0 1px, transparent 1px 12px);
+  border-bottom: 1px solid var(--border-strong);
+}
+.marks-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; }
+.marks { display: flex; gap: 4px; }
+.marks i { display: block; width: 4px; height: 4px; background: var(--border-strong); border-radius: 50%; }
+.snap-grid3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.snap-grid3 .card { margin-top: 0; }
+.snap-grid3 .card .n { font-family: var(--mono); font-size: 12px; color: var(--muted); }
+.snap-grid3 .card strong { display: block; font-size: 17px; margin: 6px 0; }
+.snap-grid3 .card p { color: var(--muted); font-size: 14px; margin: 0; }
+.snap-flag { border-left: 4px solid var(--yellow); }
+@media (max-width: 820px) {
+  .snap-grid3 { grid-template-columns: 1fr; }
+}

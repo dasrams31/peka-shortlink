@@ -109,8 +109,10 @@ export default function AdminPage() {
   return (
     <main className="wrap-wide">
       <section className="hero">
+        <span className="spec-label">Admin • Pengguna • Link • Klik</span>
         <h1>Panel admin</h1>
         <p>Pantau seluruh pengguna, link, klik, dan microsite. Nonaktifkan akun atau link yang disalahgunakan.</p>
+        <div className="ruler" />
       </section>
 
       {error && <div className="error">{error}</div>}
