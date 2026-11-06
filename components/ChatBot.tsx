@@ -6,13 +6,32 @@ const API_URL = "https://peka.ai.id/api/chat";
 const STORE_KEY = "peka-chat-history";
 const MAX_STORED = 30;
 
-function ChatIcon() {
+function RobotIconYellow() {
   return (
-    <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5Z" />
-      <circle cx="8.5" cy="11.5" r="0.6" fill="currentColor" stroke="none" />
-      <circle cx="12" cy="11.5" r="0.6" fill="currentColor" stroke="none" />
-      <circle cx="15.5" cy="11.5" r="0.6" fill="currentColor" stroke="none" />
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <rect x="3.4" y="10.6" width="1.6" height="4.2" rx="0.8" fill="#ffd60a" stroke="#111" strokeWidth="1" />
+      <rect x="19" y="10.6" width="1.6" height="4.2" rx="0.8" fill="#ffd60a" stroke="#111" strokeWidth="1" />
+      <line x1="12" y1="6.2" x2="12" y2="3.4" stroke="#111" strokeWidth="1.4" strokeLinecap="round" />
+      <circle cx="12" cy="2.3" r="1.15" fill="#ffd60a" stroke="#111" strokeWidth="1" />
+      <rect x="5" y="6.2" width="14" height="12.4" rx="3.4" fill="#ffd60a" stroke="#111" strokeWidth="1.2" />
+      <circle cx="9.1" cy="11.9" r="1.35" fill="#111" />
+      <circle cx="14.9" cy="11.9" r="1.35" fill="#111" />
+      <path d="M9.2 15.3 Q12 17.3 14.8 15.3" fill="none" stroke="#111" strokeWidth="1.5" strokeLinecap="round" />
+    </svg>
+  );
+}
+
+function RobotIconBlack() {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <rect x="3.4" y="10.6" width="1.6" height="4.2" rx="0.8" fill="#111" />
+      <rect x="19" y="10.6" width="1.6" height="4.2" rx="0.8" fill="#111" />
+      <line x1="12" y1="6.2" x2="12" y2="3.4" stroke="#111" strokeWidth="1.4" strokeLinecap="round" />
+      <circle cx="12" cy="2.3" r="1.15" fill="#ffd60a" stroke="#111" strokeWidth="1" />
+      <rect x="5" y="6.2" width="14" height="12.4" rx="3.4" fill="#111" />
+      <circle cx="9.1" cy="11.9" r="1.35" fill="#ffd60a" />
+      <circle cx="14.9" cy="11.9" r="1.35" fill="#ffd60a" />
+      <path d="M9.2 15.3 Q12 17.3 14.8 15.3" fill="none" stroke="#ffd60a" strokeWidth="1.5" strokeLinecap="round" />
     </svg>
   );
 }
@@ -115,7 +134,7 @@ export default function ChatBot() {
       >
         <div className="chatbot-head">
           <span className="chatbot-tile" aria-hidden="true">
-            <ChatIcon />
+            <RobotIconBlack />
           </span>
           <div className="chatbot-head-text">
             <strong>Chat Peka</strong>
@@ -189,7 +208,7 @@ export default function ChatBot() {
         aria-label="Buka chat Peka"
         tabIndex={open ? -1 : 0}
       >
-        <ChatIcon />
+        <RobotIconYellow />
       </button>
     </>
   );
