@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Nav from "@/components/Nav";
 import ChatBot from "@/components/ChatBot";
+import CommunityModal from "@/components/CommunityModal";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -22,6 +23,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </header>
         {children}
         <ChatBot />
+        <CommunityModal />
       </body>
     </html>
   );
