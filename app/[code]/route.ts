@@ -60,7 +60,6 @@ h2{font-size:18px;margin:0 0 4px}
 <div class="count" id="n">10</div>
 <div class="count-lbl">detik lagi menuju tujuan</div>
 <div class="bar"><i></i></div>
-<p class="dest">Tujuan: ${safeTarget}</p>
 <a class="btn" href="${safeTarget}" id="go">Lanjutkan sekarang &rarr;</a>
 </div>
 <div class="card">
