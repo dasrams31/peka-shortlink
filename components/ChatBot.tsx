@@ -98,7 +98,7 @@ export default function ChatBot() {
     } catch {
       setMessages((m) => [
         ...m,
-        { role: "assistant", content: "Muse lagi sibuk, coba lagi sebentar lagi ya." },
+        { role: "assistant", content: "Chatbot lagi sibuk, coba lagi sebentar lagi ya." },
       ]);
     } finally {
       setWaiting(false);
