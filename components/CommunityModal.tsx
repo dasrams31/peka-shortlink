@@ -115,7 +115,7 @@ export default function CommunityModal() {
           <TelegramIcon />
           Gabung Grup Telegram
         </a>
-        <p className="community-note">Gratis, tanpa daftar. Keluar kapan saja.</p>
+        <p className="community-note">Gratis, tanpa daftar.</p>
       </div>
     </div>
   );
