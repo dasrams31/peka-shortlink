@@ -52,6 +52,14 @@ h2{font-size:18px;margin:0 0 4px}
 .slide.bot{background:#111;color:#fbfbf8}
 .slide.bot p{color:#c9c9c4}
 .slide.bot .btn{background:#ffd60a;color:#111;border-color:#ffd60a}
+.slide.community{background:#fff;border:2px solid #111}
+.slide.community .eyebrow{font-family:"Space Mono",ui-monospace,Menlo,Consolas,monospace;font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:#5c5c5a;margin:0 0 6px}
+.slide.community .note{color:#5c5c5a;font-size:13px;margin:12px 0 0}
+.comm-btns{display:flex;gap:10px;flex-wrap:wrap}
+.comm-btns .btn{margin-top:0}
+.btn.wa{background:#25d366;color:#fff;border-color:#25d366}
+.btn.tg{background:#229ed9;color:#fff;border-color:#229ed9}
+@media(max-width:640px){.comm-btns{flex-direction:column}.comm-btns .btn{width:100%}}
 .foot{color:#5c5c5a;font-size:13px;margin-top:28px;border-top:1px solid #d6d6d2;padding-top:16px;text-align:center}
 @media(max-width:640px){.grid{grid-template-columns:1fr}.count{font-size:52px}}
 </style></head><body><main>
@@ -83,6 +91,16 @@ h2{font-size:18px;margin:0 0 4px}
 <h3>Order akun premium langsung di Telegram</h3>
 <p>Gemini, Canva, CapCut, dan puluhan produk digital lainnya. Chat botnya, pilih produk, bayar QRIS, langsung dikirim.</p>
 <a class="btn" href="https://t.me/aeternum_premibot">Buka Bot Telegram &rarr;</a>
+</div>
+<div class="slide community">
+<p class="eyebrow">Komunitas Peka AI</p>
+<h3>Gabung Komunitas Peka AI</h3>
+<p>Info AI terbaru, bansos, dan diskusi seputar AI. Info naik duluan di grup, sebelum naik ke feed.</p>
+<div class="comm-btns">
+<a class="btn wa" href="https://chat.whatsapp.com/GLRMuZBICZg2636lVPj6NL" target="_blank" rel="noopener">Grup WhatsApp</a>
+<a class="btn tg" href="https://t.me/peka_aigroup" target="_blank" rel="noopener">Grup Telegram</a>
+</div>
+<p class="note">Gratis, tanpa daftar. Keluar kapan saja.</p>
 </div>
 </div>
 <p class="foot">Link ini dipendekkan lewat <a href="/">SnaPeka</a> &mdash; s.peka.ai.id</p>
