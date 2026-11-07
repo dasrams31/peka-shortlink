@@ -8,6 +8,10 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "SnaPeka",
   description: "SnaPeka: pendekin link dan microsite dalam satu tempat. Custom slug, statistik klik, gratis tanpa iklan.",
+  icons: {
+    icon: "/icon.png",
+    apple: "/apple-icon.png",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
