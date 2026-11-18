@@ -3,3 +3,6 @@ data/
 node_modules/
 .env
 preview/
+watchdog.log
+watchdog-status.json
+__pycache__/
